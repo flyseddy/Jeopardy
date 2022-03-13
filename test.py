@@ -383,9 +383,12 @@ class Ui_MainWindow(object):
         self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_8)
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_11.setObjectName("verticalLayout_11")
-        self.pushButton = QtWidgets.QPushButton(self.verticalLayoutWidget_8)
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout_11.addWidget(self.pushButton)
+        self.resetButton = QtWidgets.QPushButton(self.verticalLayoutWidget_8)
+        self.resetButton.setObjectName("resetButton")
+        self.nextRoundButton = QtWidgets.QPushButton(self.verticalLayoutWidget_8)
+        self.nextRoundButton.setObjectName("nextRoundButton")
+        self.verticalLayout_11.addWidget(self.resetButton)
+        self.verticalLayout_11.addWidget(self.nextRoundButton)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1047, 22))
@@ -406,26 +409,26 @@ class Ui_MainWindow(object):
         self.cat5.setCheckable(False)
 
         # Cat Button actions
-        self.cat1_clue1.clicked.connect(lambda: self.cat_click(0))
-        self.cat1_clue2.clicked.connect(lambda: self.cat_click(1))
-        self.cat1_clue3.clicked.connect(lambda: self.cat_click(2))
-        self.cat1_clue4.clicked.connect(lambda: self.cat_click(3))
-        self.cat2_clue1.clicked.connect(lambda: self.cat_click(4))
-        self.cat2_clue2.clicked.connect(lambda: self.cat_click(5))
-        self.cat2_clue3.clicked.connect(lambda: self.cat_click(6))
-        self.cat2_clue4.clicked.connect(lambda: self.cat_click(7))
-        self.cat3_clue1.clicked.connect(lambda: self.cat_click(8))
-        self.cat3_clue2.clicked.connect(lambda: self.cat_click(9))
-        self.cat3_clue3.clicked.connect(lambda: self.cat_click(10))
-        self.cat3_clue4.clicked.connect(lambda: self.cat_click(11))
-        self.cat4_clue1.clicked.connect(lambda: self.cat_click(12))
-        self.cat4_clue2.clicked.connect(lambda: self.cat_click(13))
-        self.cat4_clue3.clicked.connect(lambda: self.cat_click(14))
-        self.cat4_clue4.clicked.connect(lambda: self.cat_click(15))
-        self.cat5_clue1.clicked.connect(lambda: self.cat_click(16))
-        self.cat5_clue2.clicked.connect(lambda: self.cat_click(17))
-        self.cat5_clue3.clicked.connect(lambda: self.cat_click(18))
-        self.cat5_clue4.clicked.connect(lambda: self.cat_click(19))
+        self.cat1_clue1.clicked.connect(lambda: self.cat_click(0, self.cat1_clue1))
+        self.cat1_clue2.clicked.connect(lambda: self.cat_click(1, self.cat1_clue2))
+        self.cat1_clue3.clicked.connect(lambda: self.cat_click(2, self.cat1_clue3))
+        self.cat1_clue4.clicked.connect(lambda: self.cat_click(3, self.cat1_clue4))
+        self.cat2_clue1.clicked.connect(lambda: self.cat_click(4, self.cat2_clue1))
+        self.cat2_clue2.clicked.connect(lambda: self.cat_click(5, self.cat2_clue2))
+        self.cat2_clue3.clicked.connect(lambda: self.cat_click(6, self.cat2_clue3))
+        self.cat2_clue4.clicked.connect(lambda: self.cat_click(7, self.cat2_clue4))
+        self.cat3_clue1.clicked.connect(lambda: self.cat_click(8, self.cat3_clue1))
+        self.cat3_clue2.clicked.connect(lambda: self.cat_click(9, self.cat3_clue2))
+        self.cat3_clue3.clicked.connect(lambda: self.cat_click(10, self.cat3_clue3))
+        self.cat3_clue4.clicked.connect(lambda: self.cat_click(11, self.cat3_clue4))
+        self.cat4_clue1.clicked.connect(lambda: self.cat_click(12, self.cat4_clue1))
+        self.cat4_clue2.clicked.connect(lambda: self.cat_click(13, self.cat4_clue2))
+        self.cat4_clue3.clicked.connect(lambda: self.cat_click(14, self.cat4_clue3))
+        self.cat4_clue4.clicked.connect(lambda: self.cat_click(15, self.cat4_clue4))
+        self.cat5_clue1.clicked.connect(lambda: self.cat_click(16, self.cat5_clue1))
+        self.cat5_clue2.clicked.connect(lambda: self.cat_click(17, self.cat5_clue2))
+        self.cat5_clue3.clicked.connect(lambda: self.cat_click(18, self.cat5_clue3))
+        self.cat5_clue4.clicked.connect(lambda: self.cat_click(19, self.cat5_clue4))
 
         # Display Answer
         self.DisplayAnswerButton.clicked.connect(lambda: self.display_answer_click())
@@ -435,6 +438,17 @@ class Ui_MainWindow(object):
         self.CorrectTeam2Button.clicked.connect(lambda: self.correctTeam2())
         self.CorrectTeam3Button.clicked.connect(lambda: self.correctTeam3())
         self.CorrectTeam4Button.clicked.connect(lambda: self.correctTeam4())
+
+        self.WrongTeam1Button.clicked.connect(lambda: self.wrongTeam1())
+        self.WrongTeam2Button.clicked.connect(lambda: self.wrongTeam2())
+        self.WrongTeam3Button.clicked.connect(lambda: self.wrongTeam3())
+        self.WrongTeam4Button.clicked.connect(lambda: self.wrongTeam4())
+
+        # Reset Gameboard
+        self.resetButton.clicked.connect(lambda: self.resetGameboard())
+
+        # Next Round
+        self.nextRoundButton.clicked.connect(lambda: self.nextRound())
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -489,14 +503,17 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "GameBoard"))
         self.RoundLabel.setText(_translate("MainWindow", "Round:"))
         self.RoundNumber.setText(_translate("MainWindow", "1"))
-        self.pushButton.setText(_translate("MainWindow", "Reset GameBoard"))
+        self.resetButton.setText(_translate("MainWindow", "Reset GameBoard"))
+        self.nextRoundButton.setText(_translate("MainWindow", "Next Round"))
     
-    def cat_click(self, question_num): # Clicking clues
+    def cat_click(self, question_num, button): # Clicking clues
         self.RevealedAnswerLabel.setText("Answer") # Resets Answer Label
         self.RevealedAnswerLabel.adjustSize() # Adjusts Label Size
         self.RevealedQuestionLabel.setText(questions[question_num]['Question']) # Reveals question on click
         self.jeopardy.updateAll(questions[question_num]['Question'], questions[question_num]['Answer'], questions[question_num]['Point'])
         self.RevealedQuestionLabel.adjustSize()
+
+        button.hide()
 
         print(self.jeopardy.getQuestion())
         print(self.jeopardy.getAnswer())
@@ -507,6 +524,7 @@ class Ui_MainWindow(object):
         self.RevealedAnswerLabel.setText(answer)
         self.RevealedAnswerLabel.adjustSize()
 
+    """Methods for Increasing Points after Correct Answer"""
     def correctTeam1(self):
         self.jeopardy.addTeam1Points()
         self.Team1Score.setText(str(self.jeopardy.getTeam1Score()))
@@ -526,6 +544,109 @@ class Ui_MainWindow(object):
         self.jeopardy.addTeam4Points()
         self.Team4Score.setText(str(self.jeopardy.getTeam4Score()))
         self.Team4Score.adjustSize()
+
+    """Methods for Decreasing Points after Wrong Answer"""
+
+    def wrongTeam1(self):
+        self.jeopardy.subtractTeam1Points()
+        self.Team1Score.setText(str(self.jeopardy.getTeam1Score()))
+        self.Team1Score.adjustSize()
+
+    def wrongTeam2(self):
+        self.jeopardy.subtractTeam2Points()
+        self.Team2Score.setText(str(self.jeopardy.getTeam2Score()))
+        self.Team2Score.adjustSize()
+
+    def wrongTeam3(self):
+        self.jeopardy.subtractTeam3Points()
+        self.Team3Score.setText(str(self.jeopardy.getTeam3Score()))
+        self.Team3Score.adjustSize()
+
+    def wrongTeam4(self):
+        self.jeopardy.subtractTeam4Points()
+        self.Team4Score.setText(str(self.jeopardy.getTeam4Score()))
+        self.Team4Score.adjustSize()
+
+    """Method for updating labels after gameboard reset"""
+    def updateAll(self):
+        self.Team1Score.setText(str(self.jeopardy.getTeam1Score()))
+        self.Team2Score.setText(str(self.jeopardy.getTeam2Score()))
+        self.Team3Score.setText(str(self.jeopardy.getTeam3Score()))
+        self.Team4Score.setText(str(self.jeopardy.getTeam4Score()))
+        self.RoundNumber.setText(str(self.jeopardy.getRound()))
+
+        self.RevealedQuestionLabel.setText("Question")
+        self.RevealedQuestionLabel.adjustSize()
+
+        self.RevealedAnswerLabel.setText("Answer")
+        self.RevealedAnswerLabel.adjustSize()
+
+    """Methods for next round and gameboard reset"""
+    def resetGameboard(self):
+        self.cat1_clue1.setHidden(False)
+        self.cat1_clue2.setHidden(False)
+        self.cat1_clue3.setHidden(False)
+        self.cat1_clue4.setHidden(False)
+
+        self.cat2_clue1.setHidden(False)
+        self.cat2_clue2.setHidden(False)
+        self.cat2_clue3.setHidden(False)
+        self.cat2_clue4.setHidden(False)
+
+        self.cat3_clue1.setHidden(False)
+        self.cat3_clue2.setHidden(False)
+        self.cat3_clue3.setHidden(False)
+        self.cat3_clue4.setHidden(False)
+
+        self.cat4_clue1.setHidden(False)
+        self.cat4_clue2.setHidden(False)
+        self.cat4_clue3.setHidden(False)
+        self.cat4_clue4.setHidden(False)
+
+        self.cat5_clue1.setHidden(False)
+        self.cat5_clue2.setHidden(False)
+        self.cat5_clue3.setHidden(False)
+        self.cat5_clue4.setHidden(False)
+
+        self.jeopardy.resetScore()
+        self.updateAll()
+
+    def nextRound(self):
+        global questions
+
+        self.cat1_clue1.setHidden(False)
+        self.cat1_clue2.setHidden(False)
+        self.cat1_clue3.setHidden(False)
+        self.cat1_clue4.setHidden(False)
+
+        self.cat2_clue1.setHidden(False)
+        self.cat2_clue2.setHidden(False)
+        self.cat2_clue3.setHidden(False)
+        self.cat2_clue4.setHidden(False)
+
+        self.cat3_clue1.setHidden(False)
+        self.cat3_clue2.setHidden(False)
+        self.cat3_clue3.setHidden(False)
+        self.cat3_clue4.setHidden(False)
+
+        self.cat4_clue1.setHidden(False)
+        self.cat4_clue2.setHidden(False)
+        self.cat4_clue3.setHidden(False)
+        self.cat4_clue4.setHidden(False)
+
+        self.cat5_clue1.setHidden(False)
+        self.cat5_clue2.setHidden(False)
+        self.cat5_clue3.setHidden(False)
+        self.cat5_clue4.setHidden(False)
+
+        self.jeopardy.increaseRound()
+        self.RoundNumber.setText(str(self.jeopardy.getRound()))
+        self.RoundNumber.adjustSize()
+        self.RevealedQuestionLabel.setText("Question")
+        self.RevealedQuestionLabel.adjustSize()
+        with open("JeopardyQuestions2.json") as file:
+            new_questions = json.load(file)
+            questions = new_questions
 
 if __name__ == "__main__":
     import sys

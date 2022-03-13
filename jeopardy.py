@@ -36,6 +36,9 @@ class Jeopardy:
     def getCurrPoints(self):
         return self.curr_points
 
+    def getRound(self):
+        return self.round
+
 
     """Setters"""
     def updateQuestion(self, question):
@@ -52,6 +55,9 @@ class Jeopardy:
         self.answer = answer
         self.curr_points = curr_points
 
+    def increaseRound(self):
+        self.round += 1
+
     def addTeam1Points(self):
         self.team1 += self.curr_points
 
@@ -63,5 +69,26 @@ class Jeopardy:
 
     def addTeam4Points(self):
         self.team4 += self.curr_points
+
+    def subtractTeam1Points(self):
+        self.team1 -= self.curr_points
+
+    def subtractTeam2Points(self):
+        self.team2 -= self.curr_points
+
+    def subtractTeam3Points(self):
+        self.team3 -= self.curr_points
+
+    def subtractTeam4Points(self):
+        self.team4 -= self.curr_points
+
+    def resetScore(self):
+        """Resets scores and round"""
+        self.team1 = 0
+        self.team2 = 0
+        self.team3 = 0
+        self.team4 = 0
+        self.round = 1
+
 
     

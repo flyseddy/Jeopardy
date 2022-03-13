@@ -1,0 +1,102 @@
+[
+ {
+  "Question": "The man of steel is another name for which superhero?",
+  "Answer": "Superman",
+  "Point": 100
+ },
+ {
+  "Question": "What is the real name of Batman",
+  "Answer": "Bruce Wayne",
+  "Point": 200
+ },
+ {
+  "Question": "Batman protects which city",
+  "Answer": "Gotham City",
+  "Point": 300
+ },
+ {
+  "Question": "How did spiderman get his superpowers",
+  "Answer": "Spider Bite",
+  "Point": 400
+ },
+ {
+  "Question": "The \"scarlett speedster\" is the nickname of which superhero?",
+  "Answer": "The Flash",
+  "Point": 100
+ },
+ {
+  "Question": "Which superhero has super tools such as the magic lasso and bullet proof bracelets",
+  "Answer": "Wonder Woman",
+  "Point": 200
+ },
+ {
+  "Question": "What is Green Lantern's secret identity?",
+  "Answer": "Hal Jordan",
+  "Point": 300
+ },
+ {
+  "Question": "Which character is usually romatically paired with batman?",
+  "Answer": "Catwoman",
+  "Point": 400
+ },
+ {
+  "Question": "Which character paralyzed Barbara Gordon?",
+  "Answer": "The Joker",
+  "Point": 100
+ },
+ {
+  "Question": "Raymond Palmer is the alter ego of which superhero?",
+  "Answer": "The Atom",
+  "Point": 200
+ },
+ {
+  "Question": "Which superhero says \"with great power comes great responsibility\"?",
+  "Answer": "Spiderman",
+  "Point": 300
+ },
+ {
+  "Question": "The Green Lantern gains his power from which object?",
+  "Answer": "A ring",
+  "Point": 400
+ },
+ {
+  "Question": "Wonder Woman comes from which island?",
+  "Answer": "Paradise Island",
+  "Point": 100
+ },
+ {
+  "Question": "Where does Green Arrow mainly operate?",
+  "Answer": "Star City",
+  "Point": 200
+ },
+ {
+  "Question": "Steve Rogers is?",
+  "Answer": "Captain America",
+  "Point": 300
+ },
+ {
+  "Question": "Who is Clark Kent?",
+  "Answer": "Superman",
+  "Point": 400
+ },
+ {
+  "Question": "Who is Selina Kyle?",
+  "Answer": "Catwoman",
+  "Point": 100
+ },
+ {
+  "Question": "Who was the first Robin?",
+  "Answer": "Dick Grayson",
+  "Point": 200
+ },
+ {
+  "Question": "Who was the second Robin?",
+  "Answer": "Jason Todd",
+  "Point": 300
+ },
+ {
+  "Question": "Who was the third Robin?",
+  "Answer": "Tim Drake",
+  "Point": 400
+ }
+]
