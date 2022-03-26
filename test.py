@@ -643,7 +643,9 @@ class Ui_MainWindow(object):
         self.RoundNumber.setText(str(self.jeopardy.getRound()))
         self.RoundNumber.adjustSize()
         self.RevealedQuestionLabel.setText("Question")
+        self.RevealedAnswerLabel.setText("Answer")
         self.RevealedQuestionLabel.adjustSize()
+        self.RevealedAnswerLabel.adjustSize()
         with open("JeopardyQuestions2.json") as file:
             new_questions = json.load(file)
             questions = new_questions
