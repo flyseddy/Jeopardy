@@ -6,6 +6,7 @@ class Jeopardy:
         """Initialize attributes"""
         self.question = None
         self.answer = None
+        self.category = None
         self.curr_points = 0 # Points for a single question
         self.round = 1
         # Points for different teams
@@ -39,6 +40,9 @@ class Jeopardy:
     def getRound(self):
         return self.round
 
+    def getCategory(self):
+        return self.category
+
 
     """Setters"""
     def updateQuestion(self, question):
@@ -50,10 +54,14 @@ class Jeopardy:
     def updateCurrPoints(self, points):
         self.curr_points = points
 
-    def updateAll(self, question, answer, curr_points):
+    def updateCategory(self, category):
+        self.category = category
+
+    def updateAll(self, question, answer, curr_points, category):
         self.question = question
         self.answer = answer
         self.curr_points = curr_points
+        self.category = category
 
     def increaseRound(self):
         self.round += 1

@@ -1,0 +1,122 @@
+[
+ {
+  "Question": "An RIT dorm is named for this woman, the First Woman to enroll in Cornell's Engineering program",
+  "Answer": "Kate Gleason",
+  "Category": "Buildings",
+  "Points": 100
+ },
+ {
+  "Question": "This Congresswomen supported the Center for Integrated Manufacturing Studies",
+  "Answer": "Louise Slaughter",
+  "Category": "Buildings",
+  "Points": 200
+ },
+ {
+  "Question": "Founder of Kodak",
+  "Answer": "George Eastman",
+  "Category": "Buildings",
+  "Points": 300
+ },
+ {
+  "Question": "Founder and CEO of Paychex (also has Rochester hospitals and schools named after him)",
+  "Answer": "B. Thomas Golisano",
+  "Category": "Buildings",
+  "Points": 400
+ },
+ {
+  "Question": "Who is the current President of RIT?",
+  "Answer": "David Munson",
+  "Category": "Miscellaneous",
+  "Points": 100
+ },
+ {
+  "Question": "What license do accountants typically pursue?",
+  "Answer": "CPA (Certified Public Accountant)",
+  "Category": "Miscellaneous",
+  "Points": 200
+ },
+ {
+  "Question": "What is the course code for System Analysis and Design?",
+  "Answer": "MGIS-330",
+  "Category": "Miscellaneous",
+  "Points": 300
+ },
+ {
+  "Question": "The quarter mile is how many miles long",
+  "Answer": ".41 miles",
+  "Category": "Miscellaneous",
+  "Points": 400
+ },
+ {
+  "Question": "What coffee spot is located near S lot?",
+  "Answer": "Midnight Oil",
+  "Category": "Food",
+  "Points": 100
+ },
+ {
+  "Question": "Wraps on Wheels, Rob's Kabob's, Roc City ______",
+  "Answer": "Sammich",
+  "Category": "Food",
+  "Points": 200
+ },
+ {
+  "Question": "This coffee spot doesn't accept dining dollars?",
+  "Answer": "Java Wally's",
+  "Category": "Food",
+  "Points": 300
+ },
+ {
+  "Question": "What year was Ben and Jerry's founded?",
+  "Answer": 1978,
+  "Category": "Food",
+  "Points": 400
+ },
+ {
+  "Question": "What facility is D Lot in front of?",
+  "Answer": "Gordon Field House\/SLC",
+  "Category": "Lots",
+  "Points": 100
+ },
+ {
+  "Question": "This facility is next to U lot",
+  "Answer": "Gene Polisseni Center",
+  "Category": "Lots",
+  "Points": 200
+ },
+ {
+  "Question": "This lot is behind Crossroads",
+  "Answer": "S Lot",
+  "Category": "Lots",
+  "Points": 300
+ },
+ {
+  "Question": "After what time can you park in reserved on campus?",
+  "Answer": "5:00 pm",
+  "Category": "Lots",
+  "Points": 400
+ },
+ {
+  "Question": "This place is closed on Sunday",
+  "Answer": "Chick-Fil-A",
+  "Category": "Henrietta",
+  "Points": 100
+ },
+ {
+  "Question": "What food is Rochester is known for nationwide?",
+  "Answer": "Garbage Plate",
+  "Category": "Henrietta",
+  "Points": 200
+ },
+ {
+  "Question": "What year was Chick-Fil-A's grand opening in Henrietta?",
+  "Answer": 2020,
+  "Category": "Henrietta",
+  "Points": 300
+ },
+ {
+  "Question": "What is Rochester's area code?",
+  "Answer": 585,
+  "Category": "Henrietta",
+  "Points": 400
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "Question": "Who is RIT's current mascot?",
+  "Answer": "Ritchie",
+  "Category": "History",
+  "Points": 100
+ },
+ {
+  "Question": "Founding year of RIT",
+  "Answer": 1829,
+  "Category": "History",
+  "Points": 200
+ },
+ {
+  "Question": "Who was the first president of RIT?",
+  "Answer": "Carleton B. Gibson (1910)",
+  "Category": "History",
+  "Points": 300
+ },
+ {
+  "Question": "What are RIT's former colors?",
+  "Answer": "Brown and Orange ",
+  "Category": "History",
+  "Points": 400
+ },
+ {
+  "Question": "What does BTP stand for?",
+  "Answer": "Business and Technology Professionals",
+  "Category": "BTP",
+  "Points": 100
+ },
+ {
+  "Question": "How many members are on BTP's Executive Board?",
+  "Answer": 6,
+  "Category": "BTP",
+  "Points": 200
+ },
+ {
+  "Question": "Who are BTP's Faculty Advisors",
+  "Answer": "Sean Hansen & Vic Perotti",
+  "Category": "BTP",
+  "Points": 300
+ },
+ {
+  "Question": "BTP was called this before adopting the name, \"BTP\"",
+  "Answer": "MIST or MIS Mentorship",
+  "Category": "BTP",
+  "Points": 400
+ },
+ {
+  "Question": "Acronym for SWOT Analysis",
+  "Answer": "Strength, Weakness, Opportunities, Threats",
+  "Category": "Business",
+  "Points": 100
+ },
+ {
+  "Question": "SOX stands for ______",
+  "Answer": "Sarbanes-Oxley Act",
+  "Category": "Business",
+  "Points": 200
+ },
+ {
+  "Question": "What are the 4 P's in marketing?",
+  "Answer": "Price, Placement, Product, Promotion",
+  "Category": "Business",
+  "Points": 300
+ },
+ {
+  "Question": "What are the 4 DiSC personality types?",
+  "Answer": "Dominance, Influence, Steadiness, Compliance",
+  "Category": "Business",
+  "Points": 400
+ },
+ {
+  "Question": "What are the hours for ImagineRIT this year?",
+  "Answer": "10am - 5pm",
+  "Category": "ImagineRIT",
+  "Points": 100
+ },
+ {
+  "Question": "When did ImagineRIT first start?",
+  "Answer": 2008,
+  "Category": "ImagineRIT",
+  "Points": 200
+ },
+ {
+  "Question": "How much do you pay to get into ImagineRIT?",
+  "Answer": "Nothing!",
+  "Category": "ImagineRIT",
+  "Points": 300
+ },
+ {
+  "Question": "Creativity + _____ are emphasized at ImagineRIT!",
+  "Answer": "Innovation",
+  "Category": "ImagineRIT",
+  "Points": 400
+ },
+ {
+  "Question": "What is Dr. Sean Hansen's undergraduate alma mater?",
+  "Answer": "Harvard",
+  "Category": "Saunders",
+  "Points": 100
+ },
+ {
+  "Question": "Who is the Dean of SCOB?",
+  "Answer": "Jacqueline R. Mozrall",
+  "Category": "Saunders",
+  "Points": 200
+ },
+ {
+  "Question": "How many undergraduate majors are in Saunders?",
+  "Answer": 8,
+  "Category": "Saunders",
+  "Points": 300
+ },
+ {
+  "Question": "Who is the department chair of MIS, Marketing, and Analytics in Saunders?",
+  "Answer": "Dr. Sean Hansen",
+  "Category": "Saunders",
+  "Points": 400
+ }
+]
