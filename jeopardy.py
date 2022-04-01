@@ -14,6 +14,7 @@ class Jeopardy:
         self.team2 = 0
         self.team3 = 0
         self.team4 = 0
+        self.team5 = 0
 
     """Getters"""
     def getTeam1Score(self):
@@ -27,6 +28,9 @@ class Jeopardy:
 
     def getTeam4Score(self):
         return self.team4
+
+    def getTeam5Score(self):
+        return self.team5
 
     def getQuestion(self):
         return self.question
@@ -78,6 +82,9 @@ class Jeopardy:
     def addTeam4Points(self):
         self.team4 += self.curr_points
 
+    def addTeam5Points(self):
+        self.team5 += self.curr_points
+
     def subtractTeam1Points(self):
         self.team1 -= self.curr_points
 
@@ -90,12 +97,16 @@ class Jeopardy:
     def subtractTeam4Points(self):
         self.team4 -= self.curr_points
 
+    def subtractTeam5Points(self):
+        self.team5 -= self.curr_points
+
     def resetScore(self):
         """Resets scores and round"""
         self.team1 = 0
         self.team2 = 0
         self.team3 = 0
         self.team4 = 0
+        self.team5 = 0
         self.round = 1
 
 

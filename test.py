@@ -278,7 +278,7 @@ class Ui_MainWindow(object):
         self.RevealedAnswerLabel.setObjectName("RevealedAnswerLabel")
         self.verticalLayout_3.addWidget(self.RevealedAnswerLabel)
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(1390, 100, 160, 88))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(1390, 100, 160, 160))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -295,8 +295,13 @@ class Ui_MainWindow(object):
         self.Team4Label = QtWidgets.QLabel(self.verticalLayoutWidget_3)
         self.Team4Label.setObjectName("Team4Label")
         self.verticalLayout_5.addWidget(self.Team4Label)
+
+        self.Team5Label = QtWidgets.QLabel(self.verticalLayoutWidget_3)
+        self.Team5Label.setObjectName("Team5Label")
+        self.verticalLayout_5.addWidget(self.Team5Label)
+
         self.verticalLayoutWidget_4 = QtWidgets.QWidget(self.centralwidget)
-        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(1500, 100, 160, 88))
+        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(1500, 100, 160, 160))
         self.verticalLayoutWidget_4.setObjectName("verticalLayoutWidget_4")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_4)
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -313,11 +318,16 @@ class Ui_MainWindow(object):
         self.Team4Score = QtWidgets.QLabel(self.verticalLayoutWidget_4)
         self.Team4Score.setObjectName("Team4Score")
         self.verticalLayout_6.addWidget(self.Team4Score)
+
+        self.Team5Score = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.Team5Score.setObjectName("Team5Score")
+        self.verticalLayout_6.addWidget(self.Team5Score)
+
         self.label_9 = QtWidgets.QLabel(self.centralwidget) # Score Label
         self.label_9.setGeometry(QtCore.QRect(1500, 70, 67, 17))
         self.label_9.setObjectName("label_9")
         self.gridLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(1400, 440, 351, 161))
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(1400, 440, 351, 190))  #161 for last col
         self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
         self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -336,6 +346,16 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.CorrectTeam3Button, 2, 0, 1, 1)
         self.CorrectTeam4Button = QtWidgets.QPushButton(self.gridLayoutWidget_2)
         self.CorrectTeam4Button.setObjectName("CorrectTeam4Button")
+
+        # New changes - Added Team 5 Button
+        self.CorrectTeam5Button = QtWidgets.QPushButton(self.gridLayoutWidget_2)
+        self.CorrectTeam5Button.setObjectName("CorrectTeam5Button")
+        self.gridLayout_3.addWidget(self.CorrectTeam5Button, 4, 0, 1, 1)
+
+        self.WrongTeam5Button = QtWidgets.QPushButton(self.gridLayoutWidget_2)
+        self.WrongTeam5Button.setObjectName("WrongTeam5Button")
+        self.gridLayout_3.addWidget(self.WrongTeam5Button, 4, 1, 1, 1)
+
         self.gridLayout_3.addWidget(self.CorrectTeam4Button, 3, 0, 1, 1)
         self.WrongTeam4Button = QtWidgets.QPushButton(self.gridLayoutWidget_2)
         self.WrongTeam4Button.setObjectName("WrongTeam4Button")
@@ -445,11 +465,13 @@ class Ui_MainWindow(object):
         self.CorrectTeam2Button.clicked.connect(lambda: self.correctTeam2())
         self.CorrectTeam3Button.clicked.connect(lambda: self.correctTeam3())
         self.CorrectTeam4Button.clicked.connect(lambda: self.correctTeam4())
+        self.CorrectTeam5Button.clicked.connect(lambda: self.correctTeam5())
 
         self.WrongTeam1Button.clicked.connect(lambda: self.wrongTeam1())
         self.WrongTeam2Button.clicked.connect(lambda: self.wrongTeam2())
         self.WrongTeam3Button.clicked.connect(lambda: self.wrongTeam3())
         self.WrongTeam4Button.clicked.connect(lambda: self.wrongTeam4())
+        self.WrongTeam5Button.clicked.connect(lambda: self.wrongTeam5())
 
         # Reset Gameboard
         self.resetButton.clicked.connect(lambda: self.resetGameboard())
@@ -494,16 +516,20 @@ class Ui_MainWindow(object):
         self.Team2Label.setText(_translate("MainWindow", "Team 2"))
         self.Team3Label.setText(_translate("MainWindow", "Team 3"))
         self.Team4Label.setText(_translate("MainWindow", "Team 4"))
+        self.Team5Label.setText(_translate("MainWindow", "Team 5"))
         self.Team1Score.setText(_translate("MainWindow", "0"))
         self.Team2Score.setText(_translate("MainWindow", "0"))
         self.Team3Score.setText(_translate("MainWindow", "0"))
         self.Team4Score.setText(_translate("MainWindow", "0"))
+        self.Team5Score.setText(_translate("MainWindow", "0"))
         self.label_9.setText(_translate("MainWindow", "Score"))
         self.WrongTeam2Button.setText(_translate("MainWindow", "Wrong Team 2"))
         self.CorrectTeam2Button.setText(_translate("MainWindow", "Correct Team 2"))
         self.WrongTeam3Button.setText(_translate("MainWindow", "Wrong Team 3"))
         self.CorrectTeam3Button.setText(_translate("MainWindow", "Correct Team 3"))
         self.CorrectTeam4Button.setText(_translate("MainWindow", "Correct Team 4"))
+        self.CorrectTeam5Button.setText(_translate("MainWindow", "Correct Team 5"))
+        self.WrongTeam5Button.setText(_translate("MainWindow", "Wrong Team 5"))
         self.WrongTeam4Button.setText(_translate("MainWindow", "Wrong Team 4"))
         self.WrongTeam1Button.setText(_translate("MainWindow", "Wrong Team 1"))
         self.CorrectTeam1Button.setText(_translate("MainWindow", "Correct Team 1"))
@@ -555,6 +581,11 @@ class Ui_MainWindow(object):
         self.Team4Score.setText(str(self.jeopardy.getTeam4Score()))
         self.Team4Score.adjustSize()
 
+    def correctTeam5(self):
+        self.jeopardy.addTeam5Points()
+        self.Team5Score.setText(str(self.jeopardy.getTeam5Score()))
+        self.Team5Score.adjustSize()
+
     """Methods for Decreasing Points after Wrong Answer"""
 
     def wrongTeam1(self):
@@ -577,12 +608,18 @@ class Ui_MainWindow(object):
         self.Team4Score.setText(str(self.jeopardy.getTeam4Score()))
         self.Team4Score.adjustSize()
 
+    def wrongTeam5(self):
+        self.jeopardy.subtractTeam5Points()
+        self.Team5Score.setText(str(self.jeopardy.getTeam5Score()))
+        self.Team5Score.adjustSize()
+
     """Method for updating labels after gameboard reset"""
     def updateAll(self):
         self.Team1Score.setText(str(self.jeopardy.getTeam1Score()))
         self.Team2Score.setText(str(self.jeopardy.getTeam2Score()))
         self.Team3Score.setText(str(self.jeopardy.getTeam3Score()))
         self.Team4Score.setText(str(self.jeopardy.getTeam4Score()))
+        self.Team5Score.setText(str(self.jeopardy.getTeam5Score()))
         self.RoundNumber.setText(str(self.jeopardy.getRound()))
 
         self.RevealedQuestionLabel.setText("Question")
@@ -688,8 +725,29 @@ if __name__ == "__main__":
             color: #FFFFFF;
             background: #060CE9; 
             font-family: "Arial";
-            font-size: 17px;
+            font-size: 23px;
             font-weight: bold;
+        }
+        QLabel#RoundLabel, QLabel#RoundNumber{
+            font-size: 25px;
+        }
+        QLabel#Team1Label, QLabel#Team2Label, QLabel#Team3Label, QLabel#Team4Label, QLabel#Team5Label, QLabel#Team1Score, QLabel#Team2Score, QLabel#Team3Score, QLabel#Team4Score, QLabel#Team5Score{
+            font-size: 25px;
+        }
+        QLabel#Team1Label, QLabel#Team1Score{
+            color: #ea1f03;
+        }
+        QLabel#Team2Label, QLabel#Team2Score{
+            color:#007efb;
+        }
+        QLabel#Team3Label, QLabel#Team3Score{
+            color: #00a018;
+        }
+        QLabel#Team4Label, QLabel#Team4Score{
+            color: #7202f1;
+        }
+        QLabel#Team5Label, QLabel#Team5Score{
+            color: #f102e7;
         }
         QLabel#seanName{
             font-size:21px;
