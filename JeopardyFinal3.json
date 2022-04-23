@@ -1,0 +1,122 @@
+[
+ {
+  "Question": "What is the highest-grossing film of all time?",
+  "Answer": "Avengers: Endgame",
+  "Category": "Movies",
+  "Points": 100
+ },
+ {
+  "Question": "What was the first Pixar movie?",
+  "Answer": "Toy Story",
+  "Category": "Movies",
+  "Points": 200
+ },
+ {
+  "Question": "In Back to the Future, what type of car is the time machine?",
+  "Answer": "A DeLorean",
+  "Category": "Movies",
+  "Points": 300
+ },
+ {
+  "Question": "In Disney's Cinderella, what are the names of Cinderella's two stepsisters?",
+  "Answer": "Anastasia and Drizella",
+  "Category": "Movies",
+  "Points": 400
+ },
+ {
+  "Question": "Which university did Microsoft founder Bill Gates drop out of?",
+  "Answer": "Harvard",
+  "Category": "Technology",
+  "Points": 100
+ },
+ {
+  "Question": "What year did Facebook launch?",
+  "Answer": 2004,
+  "Category": "Technology",
+  "Points": 200
+ },
+ {
+  "Question": "What year was the first iPhone released?",
+  "Answer": 2007,
+  "Category": "Technology",
+  "Points": 300
+ },
+ {
+  "Question": "Originally, Amazon only sold what kind of product?",
+  "Answer": "Books",
+  "Category": "Technology",
+  "Points": 400
+ },
+ {
+  "Question": "Who painted the Mona Lisa?",
+  "Answer": "Leonardo da Vinci",
+  "Category": "History",
+  "Points": 100
+ },
+ {
+  "Question": "How many people have walked on the moon?",
+  "Answer": 12,
+  "Category": "History",
+  "Points": 200
+ },
+ {
+  "Question": "The destruction of Pompeii in 79 AD was done by what volcano?",
+  "Answer": "Mt. Vesuvius",
+  "Category": "History",
+  "Points": 300
+ },
+ {
+  "Question": "Which president served the shortest term in office?",
+  "Answer": "William Henry Harrison (he died of an illness two months into his presidency)",
+  "Category": "History",
+  "Points": 400
+ },
+ {
+  "Question": "After how many personal fouls is a player ejected from an NBA game?",
+  "Answer": 6,
+  "Category": "Sports",
+  "Points": 100
+ },
+ {
+  "Question": "What was Muhammed Ali's birth name?",
+  "Answer": "Cassius Clay",
+  "Category": "Sports",
+  "Points": 200
+ },
+ {
+  "Question": "Who is the all time leading NBA scorer?",
+  "Answer": "Kareem Abdul-Jabbar (38,387)",
+  "Category": "Sports",
+  "Points": 300
+ },
+ {
+  "Question": "Who is the 2nd all time leading NBA scorer?",
+  "Answer": "Lebron James (37,062)",
+  "Category": "Sports",
+  "Points": 400
+ },
+ {
+  "Question": "What is the world's longest river?",
+  "Answer": "Amazon River",
+  "Category": "Geography",
+  "Points": 100
+ },
+ {
+  "Question": "What is the name of the largest desert in the world?",
+  "Answer": "Sahara",
+  "Category": "Geography",
+  "Points": 200
+ },
+ {
+  "Question": "Which river flows through the Grand Canyon?",
+  "Answer": "Colorado River",
+  "Category": "Geography",
+  "Points": 300
+ },
+ {
+  "Question": "What is the world's most earthquake-prone country?",
+  "Answer": "Japan",
+  "Category": "Geography",
+  "Points": 400
+ }
+]

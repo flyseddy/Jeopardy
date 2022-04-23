@@ -10,12 +10,16 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import QPixmap
 from jeopardy import Jeopardy
+import os
 
 import json
 
-filename = 'JeopardyFinal.json'
+filename = 'JeopardyFinal1.json'
 with open(filename) as f:
     questions = json.load(f)
+
+board_count = 1
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -26,17 +30,11 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
 
         self.photo = QtWidgets.QLabel(self.centralwidget)
-        self.photo.setGeometry(QtCore.QRect(150,400, 200, 200))
+        self.photo.setGeometry(QtCore.QRect(120,300, 300, 300))
         self.photo.setText("")
-        self.photo.setPixmap(QPixmap('/home/flyseddy/Coding/BTPJeopardy/Sean.JPG'))
+        self.photo.setPixmap(QPixmap('/home/flyseddy/Coding/BTPJeopardy/imagineRIT.jpg'))
         self.photo.setScaledContents(True)
         self.photo.setObjectName("photo")
-
-        self.seanName = QtWidgets.QLabel(self.centralwidget)
-        self.seanName.setGeometry(QtCore.QRect(140,200, 250, 200))
-        self.seanName.setText("Jeopardy Champion/Host!\nSean Hansen")
-        self.seanName.setAlignment(QtCore.Qt.AlignCenter)
-        self.seanName.setObjectName("seanName")
 
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(500, 90, 800, 500)) #0, 40, 621, 391
@@ -414,8 +412,14 @@ class Ui_MainWindow(object):
         self.resetButton.setObjectName("resetButton")
         self.nextRoundButton = QtWidgets.QPushButton(self.verticalLayoutWidget_8)
         self.nextRoundButton.setObjectName("nextRoundButton")
+
+        self.hardRestartButton = QtWidgets.QPushButton(self.verticalLayoutWidget_8)
+        self.hardRestartButton.setObjectName("hardRestartButton")
+
         self.verticalLayout_11.addWidget(self.resetButton)
         self.verticalLayout_11.addWidget(self.nextRoundButton)
+        self.verticalLayout_11.addWidget(self.hardRestartButton)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1047, 22))
@@ -479,6 +483,9 @@ class Ui_MainWindow(object):
         # Next Round
         self.nextRoundButton.clicked.connect(lambda: self.nextRound())
 
+        # Hard Restarts Entire Game (DO NOT USE UNLESS YOU ABOSULUTELY NEED TO)
+        self.hardRestartButton.clicked.connect(lambda: self.hardRestart())
+
 
 
     def retranslateUi(self, MainWindow):
@@ -539,6 +546,7 @@ class Ui_MainWindow(object):
         self.RoundLabel.setText(_translate("MainWindow", "Round:"))
         self.RoundNumber.setText(_translate("MainWindow", "1"))
         self.resetButton.setText(_translate("MainWindow", "Reset GameBoard"))
+        self.hardRestartButton.setText(_translate("MainWindow", "Restart App"))
         self.nextRoundButton.setText(_translate("MainWindow", "Next Round"))
     
     def cat_click(self, question_num, button): # Clicking clues
@@ -658,6 +666,8 @@ class Ui_MainWindow(object):
 
     def nextRound(self):
         global questions
+        global board_count
+        board_count += 1
 
         self.cat1_clue1.setHidden(False)
         self.cat1_clue2.setHidden(False)
@@ -689,7 +699,7 @@ class Ui_MainWindow(object):
         self.RoundNumber.adjustSize()
         self.RevealedQuestionLabel.setText("Question")
         self.RevealedAnswerLabel.setText("Answer")
-        with open("JeopardyFinal2.json") as file:
+        with open(f"JeopardyFinal{board_count}.json") as file:
             new_questions = json.load(file)
             questions = new_questions
 
@@ -698,6 +708,9 @@ class Ui_MainWindow(object):
         self.cat3.setText(questions[8]['Category'])
         self.cat4.setText(questions[12]['Category'])
         self.cat5.setText(questions[16]['Category'])
+
+    def hardRestart(self):
+        os.execl(sys.executable, sys.executable, *sys.argv)
 
 if __name__ == "__main__":
     import sys

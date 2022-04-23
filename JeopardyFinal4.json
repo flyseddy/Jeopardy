@@ -1,0 +1,122 @@
+[
+ {
+  "Question": "What is the most common eye color in humans?",
+  "Answer": "Brown",
+  "Category": "Science",
+  "Points": 100
+ },
+ {
+  "Question": "How many elements are in the periodic table?",
+  "Answer": 118,
+  "Category": "Science",
+  "Points": 200
+ },
+ {
+  "Question": "What is the lightest planet?",
+  "Answer": "Saturn (It's so light that it  would float in water)",
+  "Category": "Science",
+  "Points": 300
+ },
+ {
+  "Question": "What's the human body's largest organ?",
+  "Answer": "Skin",
+  "Category": "Science",
+  "Points": 400
+ },
+ {
+  "Question": "What was the first soft drink to be taken into space?",
+  "Answer": "Coca Cola",
+  "Category": "Fun Fact",
+  "Points": 100
+ },
+ {
+  "Question": "What is the only letter of the alphabet not to appear in the name of any US state?",
+  "Answer": "Q",
+  "Category": "Fun Fact",
+  "Points": 200
+ },
+ {
+  "Question": "What was the original purpose of the tiny pocket in jeans?",
+  "Answer": "To store pocket watches",
+  "Category": "Fun Fact",
+  "Points": 300
+ },
+ {
+  "Question": "What is the rarest M&M color?",
+  "Answer": "Brown",
+  "Category": "Fun Fact",
+  "Points": 400
+ },
+ {
+  "Question": "What museum is the national toy hall of fame at?",
+  "Answer": "The Strong National Museum of Play",
+  "Category": "Rochester",
+  "Points": 100
+ },
+ {
+  "Question": "Which current NBA team used to play in Rochester? ",
+  "Answer": "Sacremento Kings (Rochester Royals)",
+  "Category": "Rochester",
+  "Points": 200
+ },
+ {
+  "Question": "Which marvel movie had parts of their movie filmed here?",
+  "Answer": "The Amazing Spiderman 2",
+  "Category": "Rochester",
+  "Points": 300
+ },
+ {
+  "Question": "What was Rochester's original name when it was incorporated as a city?",
+  "Answer": "Rochesterville",
+  "Category": "Rochester",
+  "Points": 400
+ },
+ {
+  "Question": "Emperor Kuzco turns into what animal in The Emperor’s New Groove?",
+  "Answer": "Llama",
+  "Category": "Disney",
+  "Points": 100
+ },
+ {
+  "Question": "What year did Disneyland open?",
+  "Answer": 1955,
+  "Category": "Disney",
+  "Points": 200
+ },
+ {
+  "Question": "What is the name of the toy store in Toy Story 2?",
+  "Answer": "Al’s Toy Barn",
+  "Category": "Disney",
+  "Points": 300
+ },
+ {
+  "Question": "What does Hakuna Matata mean?",
+  "Answer": "No worries",
+  "Category": "Disney",
+  "Points": 400
+ },
+ {
+  "Question": "Before Miley Cyrus recorded “Wrecking Ball,” it was offered to which singer?",
+  "Answer": "Beyoncé",
+  "Category": "Music",
+  "Points": 100
+ },
+ {
+  "Question": "Eminem‘s 8 Mile is named after a road in which city?",
+  "Answer": "Detroit",
+  "Category": "Music",
+  "Points": 200
+ },
+ {
+  "Question": "Which classical composer was deaf?",
+  "Answer": "Ludwig van Beethoven",
+  "Category": "Music",
+  "Points": 300
+ },
+ {
+  "Question": "The Weeknd samples which ’80s megahit in “Blinding Lights?”",
+  "Answer": "“Take On Me” by A-ha",
+  "Category": "Music",
+  "Points": 400
+ }
+]
